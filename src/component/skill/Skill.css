@@ -1,0 +1,226 @@
+@property --progress1-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  @property --progress2-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  @property --progress3-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  @property --progress4-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  @property --progress5-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  @property --progress6-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  @property --progress7-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @keyframes progress1 {
+   to { --progress1-value: 90; }
+  }
+  @keyframes progress2 {
+    to { --progress2-value: 82; }
+   }
+   @keyframes progress3 {
+    to { --progress3-value: 90; }
+   }
+   @keyframes progress4 {
+    to { --progress4-value: 78; }
+   }
+   @keyframes progress5 {
+    to { --progress5-value: 70; }
+   }
+   @keyframes progress6 {
+    to { --progress6-value: 75; }
+   }
+   @keyframes progress7 {
+    to { --progress7-value: 90; }
+   }
+  #body{
+  
+    /* background-image: url(/public/Back23.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    /* width:100% ; */
+    height:100vh;
+    padding-top: 5%;
+    background-color: rgb(196, 196, 196);
+    /* padding-bottom:1.7%; */
+    /* padding-left: 0%;
+    padding-right: 0%; */
+    
+  }
+  
+  .progress-bar1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height:130px;
+    border-radius: 60%;
+    background: 
+    radial-gradient(closest-side, rgb(238, 231, 231) 79%, transparent 80% 100%),
+    conic-gradient(rgb(244, 11, 11) calc(var(--progress1-value) * 1%), rgb(245, 153, 153) 0);
+    animation: progress1 2s 1 forwards;
+   }
+  .progress-bar1::before {
+    counter-reset: percentage var(--progress1-value);
+    content: counter(percentage) '%';
+    animation: progress1 2s 1 forwards;
+   
+  }
+  .progress-bar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height:130px;
+    border-radius: 60%;
+    background: 
+    radial-gradient(closest-side, rgb(238, 231, 231) 79%, transparent 80% 100%),
+    conic-gradient(rgb(244, 11, 11) calc(var(--progress2-value) * 1%), rgb(245, 153, 153) 0);
+    animation: progress2 2s 1 forwards;
+   }
+  .progress-bar2::before {
+    counter-reset: percentage var(--progress2-value);
+    content: counter(percentage) '%';
+    animation: progress2 2s 1 forwards;
+   
+  }
+  .progress-bar3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height:130px;
+    border-radius: 60%;
+    background: 
+    radial-gradient(closest-side, rgb(238, 231, 231) 79%, transparent 80% 100%),
+    conic-gradient(rgb(244, 11, 11) calc(var(--progress3-value) * 1%), rgb(245, 153, 153) 0);
+    animation: progress3 2s 1 forwards;
+   }
+  .progress-bar3::before {
+    counter-reset: percentage var(--progress3-value);
+    content: counter(percentage) '%';
+    animation: progress3 2s 1 forwards;
+   
+  }
+  .progress-bar4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height:130px;
+    border-radius: 60%;
+    background: 
+    radial-gradient(closest-side, rgb(238, 231, 231) 79%, transparent 80% 100%),
+    conic-gradient(rgb(244, 11, 11) calc(var(--progress4-value) * 1%), rgb(245, 153, 153) 0);
+    animation: progress4 2s 1 forwards;
+   }
+  .progress-bar4::before {
+    counter-reset: percentage var(--progress4-value);
+    content: counter(percentage) '%';
+    animation: progress4 2s 1 forwards;
+   
+  }
+  .progress-bar5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height:130px;
+    border-radius: 60%;
+    background: 
+    radial-gradient(closest-side, rgb(238, 231, 231) 79%, transparent 80% 100%),
+    conic-gradient(rgb(244, 11, 11) calc(var(--progress5-value) * 1%), rgb(245, 153, 153) 0);
+    animation: progress5 2s 1 forwards;
+   }
+  .progress-bar5::before {
+    counter-reset: percentage var(--progress5-value);
+    content: counter(percentage) '%';
+    animation: progress5 2s 1 forwards;
+   
+  }
+  .progress-bar6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height:130px;
+    border-radius: 60%;
+    background: 
+    radial-gradient(closest-side, rgb(238, 231, 231) 79%, transparent 80% 100%),
+    conic-gradient(rgb(244, 11, 11) calc(var(--progress6-value) * 1%), rgb(245, 153, 153) 0);
+    animation: progress6 2s 1 forwards;
+   }
+  .progress-bar6::before {
+    counter-reset: percentage var(--progress6-value);
+    content: counter(percentage) '%';
+    animation: progress6 2s 1 forwards;
+   
+  }
+  .progress-bar7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height:130px;
+    border-radius: 60%;
+    background: 
+    radial-gradient(closest-side, rgb(238, 231, 231) 79%, transparent 80% 100%),
+    conic-gradient(rgb(244, 11, 11) calc(var(--progress7-value) * 1%), rgb(245, 153, 153) 0);
+    animation: progress7 2s 1 forwards;
+   }
+  .progress-bar7::before {
+    counter-reset: percentage var(--progress7-value);
+    content: counter(percentage) '%';
+    animation: progress7 2s 1 forwards;
+   
+  }
+  .show{
+    display: flex;
+   justify-content: space-around;
+    align-items: center;
+    
+  }
+  .skillbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .glass{
+    z-index: 1;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 32px;
+    height: fit-content;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  
+  

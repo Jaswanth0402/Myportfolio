@@ -1,0 +1,55 @@
+#link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+/* #btnr{
+    width: max-content;
+    height:32px; 
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+} */
+#work:hover{
+    border-bottom: 2px solid red;
+    padding-bottom: 0;
+    width: fit-content;
+}
+#about:hover{
+    border-bottom: 2px solid red;
+    padding-bottom: 0px;
+    width: fit-content;
+}
+/* #content{
+    display: flex;
+    flex-direction: row;
+    row-gap: 13px;
+   color: rgb(0, 0, 0);
+} */
+
+#skill:hover{
+    border-bottom: 2px solid rgb(231, 26, 26);
+    padding-bottom: 0px;
+    width: fit-content;
+}
+
+/* #btnr #link:hover{
+    background-color: rgb(255, 50, 50);
+    color: rgb(255, 255, 255);
+} */
+#brand{
+    border-bottom: 2px solid rgb(250, 24, 24);
+    padding: 0%;
+    color: rgb(0, 0, 0);
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    width:100%;
+    border: 1px solid transparent;
+    box-shadow: 5px 5px 5px gray;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}

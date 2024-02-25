@@ -1,0 +1,50 @@
+#back{
+    background-image: url('/public/image5.avif');
+    position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    width:100% ;
+    height: 100vh;
+    padding-top: 2%;
+}
+#backback{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(106, 105, 105, 0.8)) ,url('/public/image4.webp');
+   padding-bottom:5% ;
+    width: 80%;
+    height:  fit-content;
+    box-shadow: 12px 12px 12px  rgb(0, 0, 0);
+  color: white;
+  
+
+}
+#pill{
+   
+    
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    /* border: 1px solid white; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode','Geneva', Verdana;
+}
+
+#main{
+   
+    display: flex;
+    flex-direction: column;
+    column-gap: 2px;
+    justify-content: center;
+    height: 67vh;
+    /* align-items: center; */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left:9%;
+    padding-top: 2%;
+    border: none;
+
+}
+#side{
+    border: none;
+    display: flex;
+    justify-content: center;
+   
+}
